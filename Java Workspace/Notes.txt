@@ -1,0 +1,20 @@
+Topics:
+    - Inheritance in Java
+    - Abstract and final class in Java
+    - Interface in Java
+    - Overloading and overriding in Java
+    - Access Protection in Java
+    - How to import a predefined package by Java and user defined from other packages
+
+
+Abstract class
+ - An Abstract class must be defined with an Abstract keyword
+ - Abstraction is the process of hiding the implementation details and showing only the necessary functionality(function declarations) to the user.
+ - Can not make object of Abstract class directly but can be made through derived class
+ -> Examples
+    - Abstract class may contain Abstract and non Abstract methods
+    - (0-100%) Abstract methods can be there
+    - In case of Interface: 100% Abstract methods should be there
+
+Final Class:
+ - The main purpose of using a class being 

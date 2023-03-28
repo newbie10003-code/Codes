@@ -1,0 +1,1 @@
+{"name":"Local: MergeSortArray","url":"c:\\Users\\niles\\OneDrive\\Desktop\\DSA\\MergeSortArray.cpp","tests":[{"id":1664081479860,"input":"7\n38 27 43 3 9 82 10","output":"Unsorted Array:\n38 27 43 3 9 82 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\niles\\OneDrive\\Desktop\\DSA\\MergeSortArray.cpp","group":"local","local":true}

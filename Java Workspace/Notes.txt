@@ -18,3 +18,26 @@ Abstract class
 
 Final Class:
  - The main purpose of using a class being 
+ Static and non static
+  - Methods
+  - Variables (count objects, jagged array)
+  
+  A static method is a method that belongs to a class, but it does not to an instance of a class and this method can be called without the instance or object of that class.
+  A static method can only access static data members and static methods of another class or same class but cannot access non static methods or variables.
+  But this rule is not applied on non static members and variables.
+  
+  class ABCD
+  {
+  	int a = 11;
+  	static int b = 12;
+  	void m1()
+  	{
+  		System.out.println(a + b);
+  	}
+  	static void m2()
+  	{
+  		System.out.println(b);
+  	}
+  }
+ 
+

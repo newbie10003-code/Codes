@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     // Creation
-    unordered_map<string, int> m;
+    map<string, int> m;
     
     // Insertion
 
@@ -39,10 +39,19 @@ int main()
     // cout << "After Deletion: " << m.size() << endl;
 
     // Traversing a map
-    for(auto i : m)
+    // for(auto i : m)
+    // {
+    //     cout << i.first << " " << i.second << endl;
+    // }
+
+    // iterator
+    map<string, int>:: iterator it = m.begin();
+    while (it != m.end())
     {
-        cout << i.first << " " << i.second << endl;
+        cout << it -> first << " " << it -> second << endl;
+        it++;
     }
+    cout << endl;
 
     return 0;
 }

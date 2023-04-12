@@ -1,7 +1,6 @@
 public class polymorphismInJava {
-
     public static void main(String[] args) {
-        ABC obj = new CBA();
+        CBA obj = new CBA();
         obj.add(4, 5);
     }
 }

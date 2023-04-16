@@ -10,11 +10,9 @@ public class P2_Task01_KeywordsInJava {
 
     {
         System.out.println("Inside function");
-    }
-    static class abstract // Error class name is assigned as keyword
+    }static class abstract // Error class name is assigned as keyword
     {
         // Syntax error on token "abstract", Identifier expected
         int a, b;
-    }
-    abstract final; // error object name is assigned as keyword
+    }abstract final; // error object name is assigned as keyword
 }

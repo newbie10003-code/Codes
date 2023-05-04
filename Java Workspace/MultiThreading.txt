@@ -1,0 +1,15 @@
+-> Multithreading in java is a process of executing multiple threads simultaneously
+-> So, independent work can be executed simultaneously 
+-> Multithreading in java is a process of executing two or more threads simultaneously to maximize utilisation of CPU
+-> Example: Kitchen, waiter, chef
+    - Waiter will be in ideal situation
+    - Main thread (if no other thread is there, then work will be done by only one main thread!)
+    - Process, multiprocess, multitasking, Multithreading {Softwares, single OS, multitasking}
+
+-> Two ways to create a thread in java:
+    1. By implementing Runnable interface
+        - Have to provide override definition of run method
+    2. By extending Thread class
+        - Have to provide override definition of run method
+
+-> Threads are managed by JVM.

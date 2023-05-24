@@ -1,0 +1,120 @@
+--------Date - 25.Feb.2023------------
+Data Types in Java?
+	- Data types in Java are defined as specifiers that allocate different sizes and 
+	types of values the can be stored in the variable or an identifier.
+	
+	int a = 11;
+	int (data type) a (identifier/variable name) = 11(value);
+	
+	firstVariable() = correct;
+	FirstVariable() = not correct;
+	
+	Class FirstClass{//Correct
+	}
+	Class firstClass{//incorrect
+	}
+	
+	-Java has a rich set of data types. Data types in Java can be divided into two parts:
+		-Primitive Data Types: which include integer,character, boolean and float
+		-Non-Primitive Data types: which includes classes, arrays and interfaces. Example = string,Array etc;
+		
+					 Java Data Types
+		Data Type     Default Value         Default Size  
+		byte                0                  1 byte
+		short				0				   2 bytes
+		int 				0				   4 bytes
+		long				0L				   8 bytes
+		float 				0.0f			   4 bytes
+		double  			0.0d			   8 bytes
+		boolean				false			   1 bit
+		char				'\u0000'		   2 bytes
+		
+	- 1byte = 8 bits = 10101010 {8 binary bits capacity}
+		1
+		87878778787,0101010
+		1
+		00000001
+		
+	- 0 or 0 = 0
+	- 0 or 1 = 1
+	- 1 or 0 = 1
+	- 1 or 1 = 1
+	
+	- 00000000 [min] 0
+	
+	-boolean 1 bit:
+		1->true
+		0->false
+		
+-------------------------Date : 03.03.2023------------------
+
+	Precedence in Java follows left to right rule and it applies only when the operators have same precedence
+	</> code
+		/* Control Statements and Conditional Statements:
+		-Java provides Three types of control flow statements
+		for, while,do-while
+		Some another keywords used in flow statements are 
+		break and continue.
+		break-> breaks the innermost loop
+		continue-> skips one iteration of innermost loop
+		
+	##Wrapper classes in Java
+		* The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+		* Why?
+		* Because we want to use predefined methods of those objects
+		* - boolean data types -> Boolean obj; -> obj.toString();
+		
+		Integer: wrapper class of int primitive data type
+		Syntax: Integer i = Integer.valueOf(a);// Converting int into Integer
+		or
+		Integer i = new Integer("");//previous version still can use.
+		
+		another syntax 
+			Integer j = 10;//autoboxing 
+			
+			
+	## Scanner class
+		 
+		 Functions
+		 nextLine() Read user input [to read Strings]
+		 next() Read next token from the input entered by the user
+		 nextBoolean() Reads a boolean value from the user
+		 nextByte() Reads a byte value from the user
+		 nextDouble() Reads a double value from the user
+		 nextFloat() Reads a float value from the user
+		 nextInt() Reads a int value from the user
+		 nextLine() Reads a String value from the user
+		 nextLong() Reads a long value from the user
+		 nextShort() Reads a short value from the user
+		 
+		 Before using these functions we need to create object of scanner class
+		 	first import util library and scanner class
+		 	import java.util.Scanner;
+		 	
+		 	Scanner sc = new Scanner(System.in);//creating object of scanner class
+		 	String s = sc.next();// reading until space is found
+		 	String fullname = sc.nextLine();//reading until linebreak if found
+		 	
+	-----------------Date:4.March.2023-------------------
+	/*
+	It is called when an instance of the class if created
+	At the time of calling the constructor, memory for the object if allocated in the memory for the object is allocated in the memory
+	It is a special type of method which is used to initialize the object
+	Every time an object is created using the new() keyword, at least one constructor is called
+	Two types of Constructors in Java
+		-Parameterized Constructor
+		- Default Constructor
+		
+		*/
+	Class ABC{
+		ABC(){
+		
+		}
+		ABC(int a){
+		
+		}
+		ABC(int a,int b){
+		
+		}
+	}
+	

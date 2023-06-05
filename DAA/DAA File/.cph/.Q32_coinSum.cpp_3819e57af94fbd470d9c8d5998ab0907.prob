@@ -1,0 +1,1 @@
+{"name":"Local: Q32_coinSum","url":"c:\\Users\\niles\\Desktop\\Codes\\DAA\\DAA File\\Q32_coinSum.cpp","tests":[{"id":1685870445579,"input":"4\n2 5 6 3\n10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\niles\\Desktop\\Codes\\DAA\\DAA File\\Q32_coinSum.cpp","group":"local","local":true}

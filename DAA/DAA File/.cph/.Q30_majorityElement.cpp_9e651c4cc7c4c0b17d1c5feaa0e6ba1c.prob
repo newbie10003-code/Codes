@@ -1,0 +1,1 @@
+{"name":"Local: Q30_majorityElement","url":"c:\\Users\\niles\\Desktop\\Codes\\DAA\\DAA File\\Q30_majorityElement.cpp","tests":[{"id":1685730494240,"input":"9\n4 4 2 3 2 2 3 2 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\niles\\Desktop\\Codes\\DAA\\DAA File\\Q30_majorityElement.cpp","group":"local","local":true}

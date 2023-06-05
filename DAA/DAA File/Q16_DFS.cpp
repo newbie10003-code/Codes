@@ -1,17 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void dfs(unordered_map<int, list<int>>& adjList, unordered_map<int, bool>& visited, int node, vector<int>& ans)
+bool dfs(unordered_map<int, list<int>>& adjList, unordered_map<int, bool>& visited, int node, int dest)
 {
-    ans.push_back(node);
+    if(node == dest)
+        return true;
     visited[node] = true;
     for (auto nbr : adjList[node])
     {
         if (!visited[nbr])
         {
-            dfs(adjList, visited, nbr, ans);
+            dfs(adjList, visited, nbr, dest);
         }
     }
+    return false;
 }
 
 int main()
@@ -30,18 +32,8 @@ int main()
         adjList[v].push_back(u);
     }
 
-    for (int i = 0; i < vertices; i++)
-    {
-        if (!visited[i])
-        {
-            dfs(adjList, visited, i, ans);
-        }
-    }
-    
-    for(int i = 0; i < ans.size(); i++)
-    {
-        cout << ans[i] << " ";
-    }
-    cout << endl;
+    int src, dest;
+    cin >> src >> dest;
+    cout << dfs(adjList, visited, src, dest) << endl;
     return 0;
 }

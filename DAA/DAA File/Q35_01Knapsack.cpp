@@ -3,22 +3,27 @@ using namespace std;
 
 int _01Knapsack(vector<int>& weights, vector<int>& value, int n, int wt)
 {
+    if (weights.size() == 0)
+        return 0;
+
     if (n == 0)
     {
-        return 0;
+        if(weights[n] <= wt)
+            return value[n];
+        else
+            return 0;
     }
 
     if (wt <= 0)
-    {
+
         return 0;
-    }
     
     int incl = 0;
     if (weights[n] <= wt)
     {
         incl = _01Knapsack(weights, value, n - 1, wt - weights[n]) + value[n];
     }
-    int excl = _01Knapsack(weights, value, n - 1, wt);
+    int excl = _01Knapsack(weights, value, n - 1, wt) + 0;
 
     return max(incl, excl);
 }

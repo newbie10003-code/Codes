@@ -1,5 +1,5 @@
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 
 // int partition(int a[], int start, int end, int& comparisons, int& swaps)
 // {
@@ -28,40 +28,48 @@
 //     return partition(a, start, end, comparisons, swaps);
 // }
 
-// void QuickSort(int a[], int l, int r, int& comparisons, int& swaps)
-// {
-//     if (l < r)
-//     {
-//         int par = partition_r(a, l, r, comparisons, swaps);
-//         QuickSort(a, l, par - 1, comparisons, swaps);
-//         QuickSort(a, par + 1, r, comparisons, swaps);
-//     }
-// }
+int partition(int a[], int l, int r, int comparisons, int swaps)
+{
+    int i = l - 1, j = l, pivot = a[r];
+    while (j < r)
+    {
+        if (a[j] <= pivot)
+        {
+            i++;
+            swap(a[j], a[i]);
+        }
+        j++;
+    }
+    swap(a[i + 1], a[r]);
+    return i + 1;
+}
 
-// int main()
-// {
-//     int n;
-//     cin >> n;
-//     int a[n];
-//     for (int i = 0; i < n; i++)
-//     {
-//         cin >> a[i];
-//     }
-//     int comparisons = 0, swaps = 0;
-//     QuickSort(a, 0, n - 1, comparisons, swaps);
-//     for (int i = 0; i < n; i++)
-//     {
-//         cout << a[i] << " ";
-//     }
-//     cout << endl << "Comparisons: " << comparisons << endl;
-//     cout << "Swaps: " << swaps << endl;
-//     return 0;
-// }
-#include<bits/stdc++.h>
-using namespace std;
+void QuickSort(int a[], int l, int r, int& comparisons, int& swaps)
+{
+    if (l < r)
+    {
+        int par = partition(a, l, r, comparisons, swaps);
+        QuickSort(a, l, par - 1, comparisons, swaps);
+        QuickSort(a, par + 1, r, comparisons, swaps);
+    }
+}
+
 int main()
 {
-    auto i[5] = {1, 5, "Newbie", 5, 6};
-    cout << i[0] << endl;
+    int n;
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+    int comparisons = 0, swaps = 0;
+    QuickSort(a, 0, n - 1, comparisons, swaps);
+    for (int i = 0; i < n; i++)
+    {
+        cout << a[i] << " ";
+    }
+    cout << endl << "Comparisons: " << comparisons << endl;
+    cout << "Swaps: " << swaps << endl;
     return 0;
 }

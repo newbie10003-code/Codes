@@ -1,6 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void median(vector<int> &arr, int n)
+{
+    int med;
+    if (n % 2 == 0)
+    {
+        med = ((arr[n - 1] / 2) + (arr[n - 2] / 2)) / 2;
+    }
+    else
+    {
+        med = arr[n - 1] / 2;
+    }
+    cout << med << endl;
+}
+
+
 int majorityElement(vector<int>& nums)
 {
     unordered_map<int, int> count;
@@ -27,6 +42,8 @@ int main()
     {
         cin >> nums[i];
     }
+    sort(nums.begin(), nums.end());
     cout << majorityElement(nums) << endl;
+    median(nums, n);
     return 0;
 }

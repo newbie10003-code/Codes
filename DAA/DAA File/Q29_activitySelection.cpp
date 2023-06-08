@@ -1,38 +1,50 @@
-#include<bits/stdc++.h>
+
+#include <bits/stdc++.h>
 using namespace std;
 
-int activitySelection(vector<vector<int>>& activities)
+void maxProfit(vector<pair<int, int>> &jobs, int n)
 {
-    int ans = 1;
-    int end = activities[0][0];
-    for (int i = 0; i < activities.size(); i++)
+    int profit = 0;
+    sort(jobs.begin(), jobs.end(), greater<>());
+    int max = 0;
+    for (auto i : jobs)
     {
-        int time = activities[i][1];
-        int deadline = activities[i][0];
-        if (end + time <= deadline)
-        {
-            end = deadline;
-            ans++;
-        }
+        if (i.second > max)
+            max = i.second;
     }
-    return ans;
-}
 
-int main()
-{
-    int n, time, deadline; cin >> n;
-    vector<vector<int>> activities(n);
+    int fill[max];
+    for (int i = 0; i < max; i++)
+    {
+        fill[i] = -1;
+    }
 
     for (int i = 0; i < n; i++)
     {
-        cin >> time >> deadline;
-        activities[i].push_back(deadline);
-        activities[i].push_back(time);
+        int j = jobs[i].second - 1;
+
+        while (j >= 0 && fill[j] != -1)
+        {
+            j--;
+        }
+        if (j >= 0 && fill[j] == -1)
+        {
+            fill[j] = i;
+            profit += jobs[i].first;
+        }
     }
-    
-    sort(activities.begin(), activities.end());
-
-    cout << activitySelection(activities) << endl;
-
-    return 0;
+    cout << "Profit = " << profit << endl;
+}
+int main()
+{
+    int n;
+    cin >> n;
+    vector<pair<int, int>> jobs;
+    int profit, deadline;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> profit >> deadline;
+        jobs.push_back(make_pair(profit, deadline));
+    }
+    maxProfit(jobs, n);
 }

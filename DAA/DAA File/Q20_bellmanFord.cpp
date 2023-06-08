@@ -3,7 +3,7 @@ using namespace std;
 
 void bellmanFord(vector<vector<int>>& edges, int node, vector<int>& dist, int vertices)
 {
-    dist[node] = 0;
+    dist[0] = 0;
     for (int i = 0; i < vertices - 1; i++)
     {
         for (int j = 0; j < edges.size(); j++)

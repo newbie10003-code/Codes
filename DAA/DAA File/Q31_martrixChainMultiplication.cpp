@@ -65,10 +65,12 @@ int main()
     vector<int> arr;
     for (auto i : s)
     {
+        cout << i << " ";
         arr.push_back(i);
     }
+    cout << endl;
     
-    cout << solve(arr, 1, arr.size() - 1) << endl;
+    // cout << solve(arr, 1, arr.size() - 1) << endl;
 
     cout << solveTab(arr, arr.size()) << endl;
 

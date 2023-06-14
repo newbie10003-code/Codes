@@ -11,11 +11,8 @@ public class P15_Task01_Calculator_GUI {
 
 	public static void main(String[] args) {
 		Calculator obj=new Calculator();
-
 	}
-
 }
-
 
 class Calculator extends JFrame{
 	

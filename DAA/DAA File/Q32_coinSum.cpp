@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int solve(vector<int> &nums, int index, int sum)
+int solve(vector<int> &nums, int index, int sum, vector<vector<int>>& dp)
 {
     if (sum == 0)
     {
@@ -13,7 +13,10 @@ int solve(vector<int> &nums, int index, int sum)
         return 0;
     }
 
-    return solve(nums, index, sum - nums[index - 1]) + solve(nums, index - 1, sum);
+    if(dp[index][sum] != -1)
+        return dp[index][sum];
+
+    return dp[index][sum] = solve(nums, index, sum - nums[index - 1]) + solve(nums, index - 1, sum);
 }
 
 int solveTab(vector<int>& nums, int sum)
@@ -57,9 +60,10 @@ int main()
     }
     cin >> sum;
 
-    // cout << solve(nums, n, sum) << endl;
 
-    cout << solveTab(nums, sum) << endl;
+    vector<vector<int>> dp(index, vector<int>(sum + 1, -1));
+    cout << solve(nums, n, sum, dp) << endl;
+    // cout << solveTab(nums, sum) << endl;
 
     return 0;
 }

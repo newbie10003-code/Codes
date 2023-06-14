@@ -1,2 +1,2 @@
-let info = require("http")
-console.log(info.log)
+let info = require('./model.js')
+console.log(info)

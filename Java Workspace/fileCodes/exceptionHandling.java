@@ -46,22 +46,17 @@ public class exceptionHandling {
 
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
-        try
-        {
+        try {
             validateInput(number);
-        }
-        catch(InvalidInputException e)
-        {
-            System.out.println("Exception caught");
+        } catch (InvalidInputException e) {
+            System.out.println(e.getMessage());
         }
     }
 
     static void validateInput(int number) throws InvalidInputException {
         if (number > 1000) {
             throw new InvalidInputException("Exception");
-        }
-        else
-        {
+        } else {
             System.out.println(number);
         }
     }
@@ -113,8 +108,7 @@ public class exceptionHandling {
 // }
 
 class InvalidInputException extends Exception {
-    InvalidInputException(String s)
-    {
-        System.out.println("Exception type = " + s);;
+    InvalidInputException(String s) {
+        System.out.println("Exception type = " + s);
     }
 }

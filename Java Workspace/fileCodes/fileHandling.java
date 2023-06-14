@@ -89,14 +89,21 @@ public class fileHandling {
 
         try
         {
-            File obj = new File("First File1.txt");
+            File obj = new File("First File.txt");
             Scanner sc = new Scanner(obj);
-            String data = "";
+            String s = "";
             while (sc.hasNext()) 
             {
-                data += sc.nextLine();
-                System.out.println(data);
+                s += sc.nextLine() + "\n";
+                System.out.println(s);
             }
+            int count = 0;
+            // for (int i = 0; i < s.length(); i++) {
+            //     if(s.charAt(i) == ' ' || s.charAt(i) == '\n')
+            //         count++;
+            // }
+            count += s.length();
+            System.out.println("No of characters " + count);
             sc.close();
         }
         catch (FileNotFoundException e)

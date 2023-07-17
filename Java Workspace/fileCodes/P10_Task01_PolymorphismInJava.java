@@ -1,7 +1,7 @@
 public class P10_Task01_PolymorphismInJava {
     public static void main(String[] args) {
         ABC obj = new CBA();
-        obj.add(5, 7);
+        obj.add(5, 7, 8.012);
     }
 }
 
@@ -26,7 +26,7 @@ class CBA extends ABC {
     }
 
     // overriding
-    void add(int a, int b) {
-        System.out.println("Inside the Method of Class CBA" + ":" + (a + b + 10));
+    void add(int a, int b, double d) {
+        System.out.println("Inside the Method of Class CBA" + ":" + (a + b + d));
     }
 }

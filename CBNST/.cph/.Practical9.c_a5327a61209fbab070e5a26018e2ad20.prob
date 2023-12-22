@@ -1,0 +1,1 @@
+{"name":"Local: Practical9","url":"c:\\Users\\niles\\Desktop\\Codes\\CBNST\\Practical9.c","tests":[{"id":1702644323136,"input":"3\n10 1 2 44\n2 10 1 51\n1 2 10 61","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\niles\\Desktop\\Codes\\CBNST\\Practical9.c","group":"local","local":true}

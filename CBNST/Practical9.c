@@ -3,6 +3,7 @@
 
 int n;
 int step = 1;
+
 void calFunction(float mat[][100], float x, float y, float z)
 {
     float x1 = (mat[0][3] - y * mat[0][1] - z * mat[0][2]) / mat[0][0];

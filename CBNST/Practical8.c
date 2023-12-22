@@ -22,7 +22,7 @@ int main()
     {
         for (int i = 1; i <= n; i++)
         {
-            if (i > j)
+            if (i != j)
             {
                 c = A[i][j] / A[j][j];
                 for (int k = 1; k <= n + 1; k++)
@@ -42,20 +42,28 @@ int main()
     //     printf("\n");
     // }
 
-    x[n] = A[n][n + 1] / A[n][n];
-    for (int i = n - 1; i >= 1; i--)
+    for (int i = 1; i <= n; i++)
     {
-        sum = 0;
-        for (int j = i + 1; j <= n; j++)
+        float div = A[i][i];
+        for (int j = 1; j <= n + 1; j++)
         {
-            sum += A[i][j] * x[j];
+            A[i][j] /= div;
         }
-        x[i] = (A[i][n + 1] - sum) / A[i][i]; 
     }
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n + 1; j++)
+        {
+            printf("%f\t", A[i][j]);
+        }
+        printf("\n");
+    }
+
     
     for (int i = 1; i <= n; i++)
     {
-        printf("%f\t", x[i]);
+        printf("%f\t", A[i][n + 1]);
     }
     printf("\n");
 

@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <math.h>
+
 float f(float x)
 {
     return (x * x * x - (5 * x) + 1);
 }
+
 int main()
 {
     float xo, x1, x, aerror;

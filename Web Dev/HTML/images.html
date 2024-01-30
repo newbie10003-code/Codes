@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in HTML</title>
+    <style>
+        body
+        {
+            background-color: rgb(45, 42, 44);
+            color: white;
+        }
+    </style>
+</head>
+<img>
+    <h1>Images</h1>
+    
+    <!-- <img src="./tree-736885_1280.jpg" alt="Tree Image at sunset" width="400px"
+    height="250px"></img> -->
+    
+    <!-- <img src="./tree-736885_1280.jpg" alt="Tree Image at sunset" width="400px"
+    height="250px"></img> -->
+
+    <picture>
+        <!-- <source media = "(min-width: 650px)" srcset="./tree-736885_1280.jpg" /> -->
+
+        <!-- <source media = "(min-width: 460px)" srcset="./tree-736885_1280.jpg" /> -->
+        <!-- <img src="tree-736885_1280.jpg" alt="Tree Image">  -->
+    </picture>
+
+    <img src="tree-736885_1280.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="f1()" target="" alt="" title="" href="" coords="436,375,876,540" shape="rect">
+        <area onclick="f2()" target="" alt="" title="" href="" coords="237,613,1021,656,721,796" shape="poly">
+    </map>
+
+<script>
+    function f1() {
+        alert("You clicked on 1")
+    }
+    function f2() {
+        alert("You clicked on 2")
+    }
+</script>
+
+</body>
+</html>

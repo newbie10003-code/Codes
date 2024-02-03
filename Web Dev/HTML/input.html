@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input types in HTML</title>
+    <style>
+        body
+        {
+            background-color: #414141;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        Forms in HTML
+    </h1>
+
+    <form action="" method="get" accept-charset="UTF-16" autocomplete="on" autocapitalize="on" enctype="text/plain" novalidate>
+        
+        <label for="fname">First Name</label> <br />
+        <input type="text" name="" id="fname" placeholder="First Name" value=""> <br />
+        <input type="password" name="" id="pass" placeholder="Password" value=""> <br />
+        <input type="week" id="week" placeholder="Week"></input>
+        <input type="reset" value="Reset">
+        <button type="submit">Submit</button> <br />
+
+        <select name="editors" id="" multiple>
+            <option value="VSCode">VSCode</option>
+            <option value="NeoVim">NeoVim</option>
+        </select>
+
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="VSCode">
+            <option value="NeoVim">
+        </datalist>
+
+        <input type="hidden" name="" id="">
+
+    </form>
+
+</body>
+</html>

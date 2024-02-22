@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        input
+        {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            width: 50vw;
+        }
+        label, legend
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form>
+        First Name<input type="text" name="First Name" id="fname" style="display: block;">
+        Last Name<input type="text" name="Last Name" id="lname" style="display: block;"></form>
+    </form> -->
+
+    <fieldset>
+        <legend>
+            Registration Form
+        </legend>
+        <form>
+            
+            <label for="fname">First Name</label>
+            <input type="text" name="First Name" id="fname" required>
+            
+            <label for="lname">Last Name</label>
+            <input type="text" name="Last Name" id="lname" required>
+            
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password" required>
+
+            <label for="mobno">Mobile No</label>
+            <input type="tel" name="Mobile No" id="mobno" required>
+
+            <!-- <label for="gender">Gender</label>
+            <input type="radio" name="Gender" id="gender" required style="display: flex;">Male
+            <input type="radio" name="Gender" id="gender" required style="display: flex;">Female
+            <input type="radio" name="Gender" id="gender" required style="display: flex;">Other -->
+            
+            <input type="submit" value="Submit" style="border-radius: 10px; color: aquamarine; background-color: #414141; margin: 10px; padding: 3px; display: block; width: 100px;">
+
+        </form>
+    </fieldset>
+</body>
+</html>
+
+<!-- Get is used when you need less security -->
+<!-- Post is used when you need security -->

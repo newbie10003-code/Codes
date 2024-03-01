@@ -1,0 +1,13 @@
+h1
+{
+    color: cornflowerblue;
+    background-color: bisque;
+    border: 2px solid bisque;
+}
+
+p::first-line
+{
+    color: grey;
+    font-size: 23px;
+    background-color: aqua;
+}

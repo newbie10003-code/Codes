@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Form</title>
+    <style>
+        input
+        {
+            margin: 10px;
+            display: inline;
+            border-radius: 7px;
+            width: 300px;
+        }
+        label
+        {
+            display: inline-flex;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="width: auto;">
+        <legend style="font-weight: bold;">
+            Portfolio Form
+        </legend>
+        <form action="form.php">
+            <label for="fname">First Name:</label>
+            <input type="text" name="" id="fname"><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="" id="lname"><br>
+            
+            <label for="email">Email ID:</label>
+            <input type="text" name="" id="email"><br>
+            
+            <label for="phone">Phone No</label>
+            <input type="tel" name="" id="phone"><br>
+            
+            <label for="dob">Date of birth</label>
+            <input type="date" name="" id="dob"><br>
+            
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" style="width: 40px;"> Male
+            <input type="radio" name="gender" style="width: 40px;"> Female
+            <input type="radio" name="gender" style="width: 40px;"> Others <br>
+            
+            <label for="desc">Description</label>
+            <input type="text" val="in 150 words" id="desc"><br>
+        </form>
+    </fieldset>
+</body>
+</html>

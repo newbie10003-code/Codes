@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .input, label, select
+        {
+            display: flex;
+            margin: 7px;
+        }
+    </style>
+    <title>Forms 2</title>
+</head>
+<body>
+    <form action="abc.php" method="post">
+        <fieldset>
+            <legend style="font-size: larger; font-weight: bold;">Forms2 in HTML</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" value="">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="fname" value="">
+
+            <label for="pass">Password</label>
+            <input type="password" name="Password" id="pass">
+
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email">
+
+            <label for="age">Age</label>
+            <input type="number" name="Age" id="age">
+
+            <label for="birth">Birthdate</label>
+            <input type="date" name="Birth" id="birth">
+
+            <label for="sb" style="display: flex;">Subscribe to the newsletter</label>
+            <input type="checkbox" name="" id="sb" style="display: inline;">
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" name="Male" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="Female" id="female">
+                <label for="other">Others</label>
+                <input type="radio" name="Others" id="other">
+            </fieldset>
+
+            <select name="" id="">
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <textarea name="" id="text" cols="70" rows="5">Write a Message</textarea>
+
+            <button type="submit" style="padding: 5px; border-radius: 10px; background-color: aqua;
+            color: black;">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

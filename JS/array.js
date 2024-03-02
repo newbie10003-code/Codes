@@ -31,7 +31,8 @@ const myArr2 = new Array(myHeroes)
 // console.log("B ", myArr);
 
 
-console.log("A ", myArr);
-const newArr = myArr.splice(1, 3)
-console.log(newArr);
-console.log("B ", myArr);
+// console.log("A ", myArr);
+// const newArr = myArr.splice(1, 3)
+// console.log(newArr);
+// console.log("B ", myArr);
+

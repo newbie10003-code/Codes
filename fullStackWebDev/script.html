@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="bike.jpeg" alt="" id = "im">
+    <button onclick="f1()">Submit</button>
+    <script>
+        const student = {
+            roll: [10, 20, 30], 
+            name:"Aman", 
+            f1: function(a, b)
+            {
+                return a + b
+            }
+        }
+        // document.write(student.roll[1])
+        // document.write(student.f1(10, 439))
+        function f1()
+        {
+            document.getElementById("im").src = "truck.jpg";
+        }
+    </script>
+</body>
+</html>

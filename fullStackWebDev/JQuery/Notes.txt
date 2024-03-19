@@ -1,0 +1,42 @@
+JQUERY
+
+ - Lightweight js library
+ - Simplifies js programming
+ - JS -> document.getElementbyID("id")
+ - JQuery -> $("#id")
+ - Browser Independent
+ - Either download (development version - uncompressed and human readable) or use CDN to acess jquery library
+ - Production version (minimised and compressed version) is used at the time of website deployment
+ - CDN is preferred because:
+    1. No local resource usage
+    2. Loading time faster
+ - Syntax - $(Selector).action() # $ sign denotes jquery function and action function performs some action on it
+ - Syntax - $(document).ready(function(){
+                // JQuery methods go here
+            });
+
+            or
+
+            $(function()
+            {
+                // JQuery methods go here
+            })
+
+AJAX
+
+ - Asynchronous JS and XML
+ - Art of exchanging data with server and updating parts of a web page - without reloading the whole page
+ - Examples - Gmail, Maps, YT, Facebook
+ - JQuery is used to implement AJAX since it has the easiest and simplest syntax, other ways are XML
+ - Browser Independent
+ - Jitna required portion ho webpage ka sirf utna hi update karo
+ - Three methods:
+    1. load()
+        $(Selector).load(URL, data, callback)
+        - Data = send additional data to the server along with the request (optional)
+        - The callback functions have three parameters:
+            a. responseTxt
+            b. 
+            c. 
+    2. get()
+    3. post()

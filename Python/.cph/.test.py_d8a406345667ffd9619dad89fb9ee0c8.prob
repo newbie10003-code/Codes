@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/home/newbie/Desktop/Codes/Python/test.py","tests":[{"id":1710691744913,"input":"1 \n4 \n5 \n9","output":"True"},{"id":1710691761669,"input":"1 \n2 \n3 \n6","output":"False"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/newbie/Desktop/Codes/Python/test.py","group":"local","local":true}

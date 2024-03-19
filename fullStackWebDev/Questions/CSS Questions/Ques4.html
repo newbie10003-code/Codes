@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .newspaper {
+      column-count: 3; /* Number of columns */
+      column-gap: 20px; /* Gap between columns */
+      orphans: 1; /* Minimum number of lines in a column */
+      widows: 1; /* Minimum number of lines in a column */
+    }
+
+    .newspaper p {
+      margin-bottom: 10px; /* Space between paragraphs */
+    }
+
+    .newspaper h1, .newspaper h2, .newspaper h3 {
+      page-break-after: avoid; /* Avoid breaking headings between columns */
+    }
+  </style>
+</head>
+<body>
+  <div class="newspaper">
+    <h1>Newspaper Layout Example</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, velit eget euismod euismod, mi velit rhoncus nisl, quis fringilla nibh nunc ac massa.</p>
+    
+    <h2>Section Heading</h2>
+    <p>Curabitur auctor, velit eget euismod euismod, mi velit rhoncus nisl, quis fringilla nibh nunc ac massa. Sed commodo, velit eget euismod euismod, mi velit rhoncus nisl, quis fringilla nibh nunc ac massa.</p>
+    
+    <h3>Subsection Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi omnis ullam ducimus magni ex, odit nisi dignissimos nemo unde nobis repellat expedita consequatur ipsa quas eius quibusdam cumque magnam id vero ut doloribus exercitationem? Quos ex consequuntur eum quas neque?</p>
+  </div>
+</body>
+</html>

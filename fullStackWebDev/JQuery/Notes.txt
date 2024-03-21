@@ -40,3 +40,64 @@ AJAX
             c. 
     2. get()
     3. post()
+
+XML
+
+ - XML stands for Extensible Markup Language (we can define our own tags)
+ - XML is a markup language like HTML
+ - XML was designed to store and transport data
+ - XML was designed to be self-descriptive
+ - XML is a W3C recommendation
+
+ - Difference between XML and HTML:
+    1. XML was designed to carry data - with focus on what data is
+    2. HTML was designed to display data - with focus on how data looks
+    3. XML tags are not predefined tags like HTML tags are
+
+ - We can create our own tags
+ - Example:
+    <note>
+        <to>Tove</to>
+        <from>Jani</from>
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </note>
+
+    <note>
+        <date>12-09-2002</date>
+        <hour>23</hour>
+        <to>Tove</to>
+        <from>Jani</from>
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </note>
+
+    <message> salaray < 1000 </message> # Error
+    <message> salary &lt 1000 </message> # Correct
+ - Syntax Rules:
+    1. XML documents must have a root element
+    2. The XML Prolog (optional but if it exists, first line in the document)
+        <?xml version="1.0" encoding="UTF-8"?>
+    3. XML elements must have a closing tags
+    4. XML tags are case sensitive
+    5. To be continued...
+
+ - Well formed vs Valid XML documents:
+    1. An XML document with correct syntax is called 'Well-formed'
+    2. A "well formed" document is not the same as a "valid" XML document
+    3. A "valid" xml document must be "well formed". In addition, it must conform to a document type definition
+    4. The validity of XML document is checked by XML Parser
+    4. There are two Difference
+        a. DTD - document type definition. Defines the structure and the legal elements and attributes of an XML document
+            Use chatgpt
+        b. XML Schema - An XML-based alternative to DTD
+            xml to xml schema converter - https://www.liquid-technologies.com/online-xml-to-xsd-converter
+
+ - Advantages of XML Schema:
+    1. Data types can be defined
+    2. Written in XML, while DTD has to be defined in a separate structure type
+    3. XML Schema are Extensible to additions
+    4. XML schemas support data types
+    5. It is easier to convert data between different data types
+    6. XML schemas support namespaces
+    7. You don't have to learn a new language 

@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables in HTML</title>
+    <title>Tables</title>
     <style>
-        td
+        div
         {
-            /* width: 100%; */
-            border-color: black;
-            border: 2px solid;
-            border-collapse: collapse;
-            padding: 50px;
-            margin: 30px;
-            justify-content: center;
+            display: block;
+            border: 2px solid black;
+            padding: 5px;
         }
-        th
+        #paragraph1
         {
-            border: 2px solid;
+            background-image: url("bike.jpeg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #paragraph2
+        {
+            background-image: url("bike.jpeg");
+            background-size: cover;
         }
     </style>
 </head>
 <body>
-    <table style="border: 2px solid black; margin: 10px;">
+    <table border="1" cellpadding = "2" cellspacing="5">
         <tr>
-            <th>RollNo</th>
-            <th>Name</th>
-            <th>Age</th>
+            <td rowspan="2">ab</td>
+            <td colspan="2">cd</td>
         </tr>
         <tr>
-            <td>50</td>
-            <td>Rameshwari</td>
-            <td>21</td>
+            <td>ef</td>
+            <td rowspan="2">gh</td>
         </tr>
         <tr>
-            <td>42</td>
-            <td>Nilesh</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>26</td>
-            <td>Hrishabh</td>
-            <td>22</td>
+            <td colspan="2">ik</td>
         </tr>
     </table>
+
+    <div>
+        <p id="paragraph1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint ducimus quia reprehenderit culpa perferendis, natus voluptates adipisci minima, eos vel. Enim modi adipisci inventore?
+        </p>
+        <p id="paragraph2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deserunt cumque rem, dolores nemo magni? Corrupti asperiores fuga in laudantium harum. Minus quibusdam cumque laudantium dolorem in labore a et?
+        </p>
+    </div>
 </body>
 </html>

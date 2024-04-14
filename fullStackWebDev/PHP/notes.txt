@@ -1,0 +1,22 @@
+ - PHP
+ - Server-side scripting language. Others include: PHP, JSP, ASP, Python etc
+ - Client-side languages: HTML, CSS & JS
+ - Requirements:
+    1. Editor
+    2. Tools that allow us to create a server like XAMPP
+
+ - PHP stands for PHP Hypertext Pre-processor
+ - Originally created by Danish-Canadian programming Rasmus Lerdorf in 1993 and released in 1995
+ - Server-side scripting language
+ - PHP is used to create dynamic and interactive websites
+ - Open-source: PHP is free to download and use
+ - Platform independent: PHP code can run on any OS
+ - Faster: Runs faster than other scripting languages
+ - PHP is compatible with almost all servers used today (Apache, IIS etc.)
+ - PHP supports a wide range of databases (MySQL, Oracle, MongoDB etc.)
+
+ - PHP can:
+    1. can generate dynamic page content
+    2. can create open, read, write, delete, and close files on the server
+    3. can collect form data
+    4. 

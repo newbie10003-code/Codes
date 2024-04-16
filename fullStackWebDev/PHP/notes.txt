@@ -20,3 +20,22 @@
     2. can create open, read, write, delete, and close files on the server
     3. can collect form data
     4. 
+
+ - PHP Datatypes:
+   1. string
+   2. integer
+   3. float
+   4. boolean
+   5. Array
+   6. Object
+   7. NULL
+   8. Resource
+
+   Note - Functions in PHP can be used with or without declaration
+
+ - Super Global Variables
+   1. _GET
+   2. _POST
+   3. _REQUEST
+   4. _COOKIE
+   5. _SESSION and more

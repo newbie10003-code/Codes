@@ -1,0 +1,26 @@
+- Basic History
+    1. React was designed by Jorden Walke, a SWE at Facebook
+    2. It was first deployed for the FB news feed around 2011
+    3. In 2013, React was open-sourced at the JS Conference
+
+- React is a popular JS library for building modern web apps
+- React allows developers to create user interfaces using a component-based approach
+- React is known for its performance and flexibility, and it is widely used in web development for both small and large applications
+
+- Key Features
+    1. Component-based architecture: React applications are built using reusable components. Components encapsulate a part of the user interface and can manage their own state and logic.
+    2. Uses a declarative approach: In declarative programming, you describe what you want the end result to look like, and the underlying system takes care of the details
+    3. Virtual DOM(heart of React, very important):React uses a virtual DOM to manage update to the actual DOM efficiently. When the state or props of a component change, React updates the virtual DOM first and then compares it with 
+        - Advantages:
+            1. 
+            2. 
+
+
+- Document Object Model
+    1. It is a model that defines HTML and XML documents as a tree structure, where each node of the tree is an object which represents a part of the document
+    2. The DOM, is an interface that allows the developers to interact and control the elements of the web
+    - Disadvantages
+        * Whenever a child element is updated then all of the parent elements are rendered all over again which take time. Virtual DOM solves this issue
+
+- Virtual DOM
+    1. The virtual DOM, often abbreviated as VDOM, is a simplified, lightweight, in-memory representation of

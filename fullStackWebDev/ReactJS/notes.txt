@@ -24,3 +24,18 @@
 
 - Virtual DOM
     1. The virtual DOM, often abbreviated as VDOM, is a simplified, lightweight, in-memory representation of
+
+                                    REACT JS
+                                    /   \
+                                   /     \
+                                  /       \
+                                DevMode    Production Mode
+                            
+- React Libraries
+    1. React library
+        - This script includes the React development library
+        - It provides the necessary functions and classes for writing React code in your applications
+        - Since the file is the development version, it includes helpful debugging and error messages to aid in development
+    2. ReactDOM library
+        - This script include the ReactDOM development library
+        - ReactDOM is an extension of React that provides 

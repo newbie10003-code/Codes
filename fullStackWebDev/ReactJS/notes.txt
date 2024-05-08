@@ -39,3 +39,11 @@
     2. ReactDOM library
         - This script include the ReactDOM development library
         - ReactDOM is an extension of React that provides 
+
+- JSX
+    1. JSX stands for Javascript XML
+    2. JSX makes it easier to write and add HTML in React
+    3. 
+
+- Production Mode
+    1. 

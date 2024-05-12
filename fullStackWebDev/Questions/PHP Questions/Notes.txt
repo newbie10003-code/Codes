@@ -1,0 +1,7 @@
+Q1. 
+Design a login page having username password and a button
+Match username and password of this form with the username and password present in the database
+If match is successful, then print login successful as msg, other wise print Incorrect username or password
+
+Q2. 
+Wap to create a database of students and retreive rows of students where percentage is greater than 70

@@ -47,3 +47,28 @@
 
 - Production Mode
     1. 
+
+// Creating a react app
+import React from "react";
+import ReactDOM from 'react-dom';
+const a = document.getElementById("ab");
+const b = ReactDOM.createRoot(a);
+b.render(<h1> This is heading </h1>);
+
+- Components
+    1. In react, components are building blocks of user interfaces.
+    2. They are reusable, self-contained pieces of code that encapsulate a specific functionality or piece of the user interface
+    3. Class components and function components
+
+- Creating a function component
+// In heading.js
+import React from react;
+function Heading()
+{
+    return <h1> This is heading </h1>;
+}
+export default Heading;
+// In index.js
+b.render(<Heading/>);
+
+// npm start in myproject folder;

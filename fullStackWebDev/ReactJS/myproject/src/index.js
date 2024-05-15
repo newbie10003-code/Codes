@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import Heading from "./Heading";
-import Para from "./Para";
+import {Para, Div} from "./Para";
+import * as cs from "./Para"; // Using alias to import all exported components from Para.js
+// import Div from "./Para";
 import List from "./List";
 
 const a = document.getElementById("ab");
@@ -14,13 +16,20 @@ const b = ReactDOM.createRoot(a);
 //   <Heading/>
 //   <h1>This is your Heading</h1>
 //   </>
-// );
+// );abc
 // Render can take only one element as argument
 
 b.render(
   <>
+  <h1>These are react fragments</h1>
   <Heading/>
   <Para/>
   <List/>
+  <Div/>
+  {/* Used for rendering it as a component */}
+  {Div()}
+  {/* Used for calling it as a function */}
+  {cs.Div()}
+  {cs.default}
   </>
 );

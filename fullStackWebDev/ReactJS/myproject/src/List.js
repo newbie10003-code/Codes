@@ -1,5 +1,5 @@
 import React from "react";
-function List()
+function List(username)
 {
     return <ul>
         <li>Rameshwari</li>

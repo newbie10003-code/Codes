@@ -72,3 +72,9 @@ export default Heading;
 b.render(<Heading/>);
 
 // npm start in myproject folder;
+
+Props
+- Props are inputs to a React component
+- They are immutable, meaning they cannot be modified by the component receiving them, read-only component
+- Used for passing data from parent components to child components
+- Components can receive props as function parameters

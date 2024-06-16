@@ -78,3 +78,7 @@ Props
 - They are immutable, meaning they cannot be modified by the component receiving them, read-only component
 - Used for passing data from parent components to child components
 - Components can receive props as function parameters
+
+React Router
+- It enables client side routing
+- In traditional websites, the browser requests a document from a web server, downloads

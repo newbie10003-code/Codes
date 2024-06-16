@@ -17,7 +17,7 @@
 
 <?php
 echo "<h1>Hello <br> World</h1>";
-print "Hello World";
+$a = print "Hello World";
 ?>
 
 <!-- JS inside PHP -->
@@ -38,11 +38,17 @@ print "Hello World";
     
     $a = 1.0;   // Float
     
-    $a = [10, 20, "30"];  // Array (heterogeneous in nature)
-    $a = array(10, 20, "30");   // Predefined function to create an array
+    $a = [10, 20.0, "30"];  // Array (heterogeneous in nature)
+    $a = array(10, 20.0, "30");   // Predefined function to create an array
     echo $a;
     echo $a[2]; // Accessing array elements
     // Three types of loop: for, while and do while
+    if ($a == 1) {
+        echo "$a is 1";
+    }
+    for i, j in enumerate(nums):
+        i = index
+        j = nums[index]
     foreach($a as $i)
     {
         echo "$i ";
@@ -57,7 +63,7 @@ print "Hello World";
     // Classes and objects in PHP
     class Test
     {
-        private $a;
+        $a;
         public function f()
         {
             echo "Hello World";
@@ -72,3 +78,13 @@ print "Hello World";
     $a = NULL;
     echo var_dump($a);
 ?>
+
+
+
+
+
+
+
+
+
+

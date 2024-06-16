@@ -1,19 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validation using HTML</title>
+    <title>Maruti Car Survey</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <select name="" id="cardType">
-        <option value="MasterCard">MasterCard</option>
-        <option value="Visa">Visa</option>
-        <option value="Amex">Amex</option>
+    <h1>Maruti Car Survey</h1>
+
+    <label for="city">Select your city:</label>
+    <select id="city">
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Kolkata">Kolkata</option>
     </select>
-    <label for="card">Enter card details: </label>
-    <input type="text" id="card">
-    <button type="submit" onclick="f1()">Submit</button>
-    <script src="ques1.js"></script>
+
+    <label for="model">Select your Maruti car model:</label>
+    <select id="model">
+        <option value="K10">Maruti-K10</option>
+        <option value="Zen-Astelo">Zen-Astelo</option>
+        <option value="Wagnor">Wagnor</option>
+        <option value="SX4">Maruti-SX4</option>
+    </select>
+
+    <button onclick="submitSurvey()">Submit</button>
+
+    <h2>Survey Results:</h2>
+    <table id="results">
+        <tr>
+            <th>City</th>
+            <th>Maruti-K10</th>
+            <th>Zen-Astelo</th>
+            <th>Wagnor</th>
+            <th>Maruti-SX4</th>
+        </tr>
+    </table>
+
+    <script>
+        var surveyResults = {
+            "Delhi": {"K10": 10, "Zen-Astelo": 15, "Wagnor": 12, "SX4": 5},
+            "Mumbai": {"K10": 34, "Zen-Astelo": 21, "Wagnor": 43, "SX4": 12},
+            "Chennai": {"K10": 21, "Zen-Astelo": 54, "Wagnor": 34, "SX4": 33},
+            "Kolkata": {"K10": 12, "Zen-Astelo": 41, "Wagnor": 76, "SX4": 93}
+        };
+
+        function submitSurvey() {
+            var city = document.getElementById('city').value;
+            var model = document.getElementById('model').value;
+            surveyResults[city][model]++;
+            displayResults();
+        }
+
+        function displayResults() {
+            var table = document.getElementById('results');
+            table.innerHTML = '<tr><th>City</th><th>Maruti-K10</th><th>Zen-Astelo</th><th>Wagnor</th><th>Maruti-SX4</th></tr>';
+            for (var city in surveyResults) {
+                var row = '<tr><td>' + city + '</td>';
+                for (var model in surveyResults[city]) {
+                    row += '<td>' + surveyResults[city][model] + '</td>';
+                }
+                row += '</tr>';
+                table.innerHTML += row;
+            }
+        }
+    </script>
 </body>
 </html>

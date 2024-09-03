@@ -1,0 +1,1 @@
+{"name":"Local: squareRootDecomposition","url":"c:\\Users\\Newbie\\Desktop\\Codes\\DSA\\squareRootDecomposition.cpp","tests":[{"id":1725210739951,"input":"5\n1 2 3 4 5\n2\n3 10 1\n1 4 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Newbie\\Desktop\\Codes\\DSA\\squareRootDecomposition.cpp","group":"local","local":true}
